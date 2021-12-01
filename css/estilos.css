@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@500&family=Tenor+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*TODAS LAS SECCIONES:  MENÚ Y FOOTER*/
+
+#menu{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	background-color: black;
+	justify-content: end;
+	text-decoration: none;
+	color: #DCAC01;
+	line-height: 2rem;
+}
+
+.hijo{
+	padding: 20px;
+	font-family: Montserrat;
+	font-size: 16px;
+	text-decoration: none;
+	color: #DCAC01;
+}
+
+#footer{
+	display: flex;
+	flex-direction: row;
+	padding: 16px;
+	background-color: black;
+	justify-content: space-evenly;
+	text-decoration: none;
+	line-height: 1.5rem;
+}
+
+.hijo1{
+	font-family: Tenor Sans;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #DCAC01;
+}
+
+/*MEDIA QUERIES EN MENÚ, FOOTER Y TÍTULOS*/
+
+@media all and (max-width:768px){
+	#menu{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: black;
+	justify-content: end;
+	text-decoration: none;
+	color: #DCAC01;
+	line-height: 2rem;
+}
+
+.hijo{
+	background-color: black;
+	padding: 10px;
+	font-family: Montserrat;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #DCAC01;
+}
+
+#footer{
+	display: flex;
+	flex-direction: row;
+	padding: 16px;
+	background-color: black;
+	justify-content: center;
+	text-decoration: none;
+	line-height: 1.5rem;
+}
+
+.p{
+	padding: 10px;
+	text-align: center;
+	font-family: Tenor Sans;
+	font-size: 2rem;
+	font-weight: normal;
+}
+}
+
+body{
+	background: linear-gradient(to bottom, #e5e5e5 0%,#777777 100%);
+}
+
+div{ 
+	font-family: monospace;
+	font-size: 16px;
+	color: #black;
+	text-align: center; 
+}
+
+p{
+	padding: 10px;
+	text-align: center;
+	font-family: Tenor Sans;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/*.title{
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: overline;
+}*/
+
+/*SECCIÓN SERVICIOS*/
+
+#contenedor{
+	font-family: Montserrat;
+	font-size: 16px;
+	color: #black;
+	display: grid;
+	grid-template-areas:
+	"dec foto foto"
+	"liq emp ase";
+	height: 80vh;
+	width: 90%;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	justify-items: stretch;
+}
+
+.textbox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+}
+
+.subtitle{
+	font-family: Montserrat;
+	font-size: 16px;
+	color: #black;
+}
+
+.declaracion{
+	grid-area: dec;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.liquidacion{
+	grid-area: liq;
+	background-color: #DCAC01;
+}
+
+.empresa{
+	grid-area: emp;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+.asesoramiento{
+	grid-area: ase;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+.imagen{
+	grid-area: foto;
+	background-image: url(../assets/2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*SECCIÓN CONTACTO*/
+
+#formularios{
+	width: 200vh; /*cuál es el ancho estandar?*/
+	height: 550px;
+	background-image: url(../assets/logo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#formulario{
+	font-family: monospace;
+	font-size: 16px;
+	color: black; 
+	text-align: left;
+}
+
+
+
+
+
