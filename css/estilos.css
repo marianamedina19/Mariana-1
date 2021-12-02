@@ -48,6 +48,126 @@
 	color: #DCAC01;
 }
 
+body{
+	background: linear-gradient(to bottom, #e5e5e5 0%,#777777 100%);
+}
+
+div{ 
+	font-family: monospace;
+	font-size: 16px;
+	text-align: center; 
+}
+
+p{
+	padding: 10px;
+	text-align: center;
+	font-family: Tenor Sans;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/*.title{
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: overline;
+}*/
+
+
+/*SECCIÓN INDEX*/
+
+.img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2rem;
+	height: 80%;
+	width: 100%;
+}
+
+/*SECCIÓN SERVICIOS*/
+
+#contenedor{
+	display: grid;
+	grid-template-areas:
+	"dec foto foto"
+	"liq emp ase";
+	height: 80vh;
+	width: 90%;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	justify-items: stretch;
+}
+
+.textbox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+	font-family: Montserrat;
+	font-size: 16px;
+	color: #black;
+}
+
+.textbox:hover{
+	transform: scale(1.1);
+	transition:200ms;
+}
+
+.declaracion{
+	grid-area: dec;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.liquidacion{
+	grid-area: liq;
+	background-color: #DCAC01;
+}
+
+.empresa{
+	grid-area: emp;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.asesoramiento{
+	grid-area: ase;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.imagen{
+	grid-area: foto;
+	background-image: url(../assets/2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*SECCIÓN CONTACTO*/
+
+#formularios{
+	width: 200vh; /*cuál es el ancho estandar?*/
+	height: 550px;
+	background-image: url(../assets/logo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#formulario{
+	font-family: monospace;
+	font-size: 16px;
+	color: black; 
+	text-align: left;
+}
+
 /*MEDIA QUERIES EN MENÚ, FOOTER Y TÍTULOS*/
 
 @media all and (max-width:768px){
@@ -88,59 +208,22 @@
 	font-size: 2rem;
 	font-weight: normal;
 }
+
+.img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2rem;
+	
 }
-
-body{
-	background: linear-gradient(to bottom, #e5e5e5 0%,#777777 100%);
-}
-
-div{ 
-	font-family: monospace;
-	font-size: 16px;
-	color: #black;
-	text-align: center; 
-}
-
-p{
-	padding: 10px;
-	text-align: center;
-	font-family: Tenor Sans;
-	font-size: 3rem;
-	font-weight: bold;
-}
-
-/*.title{
-	text-align: left;
-	font-family: Montserrat;
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-decoration: overline;
-}*/
-
-
-/*SECCIÓN INDEX*/
-
-
 
 /*SECCIÓN SERVICIOS*/
 
 #contenedor{
-	font-family: Montserrat;
-	font-size: 16px;
-	color: #black;
-	display: grid;
-	grid-template-areas:
-	"dec foto foto"
-	"liq emp ase";
-	height: 80vh;
-	width: 90%;
-	margin-top: 50px;
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-bottom: 50px;
-	grid-column-gap: 30px;
-	grid-row-gap: 30px;
-	justify-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-content: center;
 }
 
 .textbox{
@@ -149,7 +232,10 @@ p{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	height: 100%;
+	height: 3rem;
+	font-family: Montserrat;
+	font-size: 16px;
+	color: #black;
 }
 
 .textbox:hover{
@@ -157,58 +243,16 @@ p{
 	transition:200ms;
 }
 
-.subtitle{
-	font-family: Montserrat;
-	font-size: 16px;
-	color: #black;
-}
-
-.declaracion{
-	grid-area: dec;
+.declaracion .liquidacion .empresa .asesoramiento{
 	background-color: #DCAC01;
 	justify-items: stretch;
+	height: 2rem;
 }
 
-.liquidacion{
-	grid-area: liq;
-	background-color: #DCAC01;
-}
-
-.empresa{
-	grid-area: emp;
-	background-color: #DCAC01;
-	justify-items: stretch;
-}
-.asesoramiento{
-	grid-area: ase;
-	background-color: #DCAC01;
-	justify-items: stretch;
-}
 .imagen{
-	grid-area: foto;
-	background-image: url(../assets/2.jpg);
-	background-size: cover;
-	background-position: center;
+	display: none;
 }
-
-/*SECCIÓN CONTACTO*/
-
-#formularios{
-	width: 200vh; /*cuál es el ancho estandar?*/
-	height: 550px;
-	background-image: url(../assets/logo.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
 }
-
-#formulario{
-	font-family: monospace;
-	font-size: 16px;
-	color: black; 
-	text-align: left;
-}
-
-
 
 
 
