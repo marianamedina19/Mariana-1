@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="./assets/estilos.css">
+	<link rel="shortcut icon" type="text/css" href="./assets/favicon.png">
 	<title>AP - Servicios</title>
 </head>
 <body>
@@ -36,25 +37,36 @@
 		</nav>
 	</div>
 	<!-------------------------------------------------->
-	<h1 class="mt-2 text-start text-md-center">Nuestros servicios</h1>
+	<h1 class="mt-2 ml-2 text-start text-md-center">Nuestros servicios</h1>
 	<!--RESOLVER ESTO: NO SE VE EN <SM -->
-	<div id="contenedor">
-			<div class="declaracion">
-				<div class="textbox">Declaración jurada</div>
-			</div>
-			<div class="liquidacion">
-				<div class="textbox">Liquidación de impuestos</div>
-			</div>
-			<div class="empresa">
-				<div class="textbox">Apertura de empresas</div>
-			</div>
-			<div class="asesoramiento">
-				<div class="textbox">Asesoramiento contable</div>
-			</div>
-			<div class="imagen">
-			</div>	
-	</div>
+	
+	<div class="container-fluid">
+  		<div class="mt-2 row row-cols-2 row-cols-lg-4 g-2 g-lg-3 text-center">
+   			 <div class="col">
+     			 <div class="p-3 border bd-highlight shadow-sm bg-light">Declaración jurada</div>
+   			 </div>
+   			 <div class="col">
+    			  <div class="p-3 border bd-highlight shadow-sm bg-light">Liquidación de impuestos</div>
+  			</div>
+   			 <div class="col">
+   				   <div class="p-3 border bd-highlight shadow-sm bg-light">Apertura de empresas</div>
+    		</div>
+   			 <div class="col">
+   				   <div class="p-3 border bd-highlight shadow-sm bg-light">Asesoramiento contable</div>
+    		</div>
+    	</div>
+    </div>
 
+<!--
+	<div class="container-fluid">
+		<div class="row justify-center">
+			<div class="col-md-4">Declaración jurada</div>
+			<div class="col-md-4">Liquidación de impuestos</div>
+			<div class="col-md-4">Apertura de empresas</div>
+			<div class="col-md-4">Asesoramiento contable</div>
+		</div>
+	</div>
+-->
 
 <!--
 			</div>
@@ -78,10 +90,6 @@
 		</div>	
 	</div>
 -->
-
-
-
-	<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
