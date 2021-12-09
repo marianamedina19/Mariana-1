@@ -2,59 +2,67 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Contacto - AP</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="shortcut icon" type="text/css" href="assets/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/estilos.css">
+	<link rel="shortcut icon" type="text/css" href="./assets/favicon.png">
+	<title>AP - Contacto</title>
 </head>
 <body>
-	<div id="menu">
-		<div>
-			<a class="hijo" href="./index.html">Inicio</a>
-		</div>
-		<div>
-			<a class="hijo" href="./quienessomos.html">Quiénes somos</a>
-		</div>
-		<div>
-			<a class="hijo" href="./servicios.html">Servicios</a>
-		</div>
-		<div>
-			<a class="hijo" href="./experiencias.html">Experiencias</a>
-		</div>
-		<div>
-			<a class="hijo" href="./contacto.html">Contacto</a>
-		</div>
-	</div>	
-	<p class="p"> Contacto </p>
-
-	<div id="formularios">
-
-		<form action="email.php", method="POST">  
-		<p id="formulario">
-			<label>Nombre</label>
-			<input type="text" name="nombre">
-		</p>
-		<p id="formulario">
-			<label>Apellido</label>
-			<input type="text" name="apellido">
-		</p>
-		<p id="formulario">
-			<label>Email</label>
-			<input type="email" name="email">
-		</p>
-
-		<p id="formulario">
-			<label>Escribe aquí tu consulta</label>
-			<textarea name="consulta"></textarea>
-			<input type="button" name="" value="Enviar">
-		</p>
-	</form>
+	<!-- MENÚ-->
+	<div class="container-fluid bg-dark">
+		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="./index.html">Servicios contables</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="./servicios.html">Servicios</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="./experiencias.html">Experiencias</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="./contacto.html">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 	</div>
-
-	<div id="footer">
-		<div class="hijo1">Instagram</div>
-		<div class="hijo1">• AP •</div>
-		<div class="hijo1">Facebook</div>
-	</div>
-
+	<!-------------------------------------------------->
+	<h1 class="mt-2 text-start text-md-center">¡Comunicate con nosotros!</h1>
+	<div class="container-fluid" class="row" class="col-6" id="formulario">
+		<div class="row">
+			<div class="col-8 col-md-8 col-xl-8">
+				<div class="mb-3">
+				  <label for="formGroupExampleInput" class="form-label">Nombre</label>
+				  <input type="text" class="form-control" id="formGroupExampleInput">
+				</div>
+				<div class="mb-3">
+				  <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+				  <input type="text" class="form-control" id="formGroupExampleInput2">
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlInput1" class="form-label">Email</label>
+				  <input type="email" class="form-control" id="exampleFormControlInput1">
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  <button type="button" class="btn btn-danger">Enviar</button>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-4"><img src="./assets/logo.jpg" alt="logo"> 
+			</div> 
+		</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
