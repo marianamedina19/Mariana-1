@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(33,37,41,1) 0%,rgba(178,178,178,1) 100%);
+	h1{
+		font-family: lato;
+		font-weight: 300;
+		color: black;
+	}
+
+	div{
+		p{
+			font-family: lato;
+			font-weight: 300;
+			font-size: 1.5rem;
+			color: white;
+			text-align: center;	
+		}	
+	}
+}
+
+/* INDEX ----------------------------------- */
+
+@keyframes entrada{
+	from{
+		transform: translateX(-500px);
+	}	
+}
+
+#contIndex1{
+	animation: entrada;
+	animation-delay: 0s;
+	animation-duration: 2s;
+}
+
+#contIndex2{
+	animation: entrada; 
+	animation-delay: 500ms;
+	animation-duration: 2s;
+}
+	
+#contIndex3{
+	animation: entrada;
+	animation-delay: 1s;
+	animation-duration: 2s;
+}
+
+#contIndex4{
+	animation: entrada;
+	animation-delay: 1500ms;
+	animation-duration: 2s;
+}
+
+#contIndex1, #contIndex2, #contIndex3, #contIndex4{
+
+	background-color: #ffc107;
+
+	span{
+		font-family: lato;
+		font-weight: 400;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: black;
+	}
+
+	p{
+		font-family: lato;
+		font-weight: 300;
+		font-size: 1.5rem;
+		color: black;
+	}	
+	
+	@media all and (max-width: 768px){;
+		
+		span{
+			font-size: 1.5rem;
+		}
+
+		p{
+			font-size: 1rem;
+		}
+		
+		img{
+		display: none;
+		}
+	}
+}
+
+/* QUIÉNES SOMOS ----------------------------------- */
+
+#contadores{
+	font-family: Lato;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #black;
+	display: grid;
+	grid-template-areas:
+	"imagen1 descripción1 descripción1"
+	"descripción2 descripción2 imagen2";
+	width: 90%;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	justify-items: stretch;
+}
+
+.descripción1{
+	grid-area: descripción1;
+	background-color: #ccc;
+	}
+
+.descripción2{
+	grid-area: descripción2;
+	background-color: #ccc;
+}
+
+.imagen1{
+	grid-area: imagen1;
+	background-image: url(../assets/contador1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+}
+
+.imagen2{
+	grid-area: imagen2;
+	background-image: url(../assets/contador2.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+}
+
+/* SERVICIOS ----------------------------------- */
+
+#contenedor{
+	font-family: Lato;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #black;
+	display: grid;
+	grid-template-areas:
+	"dec foto foto"
+	"liq emp ase";
+	height: 80vh;
+	width: 90%;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	justify-items: stretch;
+}
+
+.textbox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+}
+
+.subtitle{
+	font-family: Lato;
+	font-size: 2rem;
+	color: #black;
+	span{
+		font-family: lato;
+		font-weight: 400;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: black;
+	}
+	p{
+		font-family: lato;
+		font-weight: 300;
+		font-size: 1.5rem;
+		color: black;
+	}	
+}
+
+.extra{
+	font-family: lato;
+	font-size: 1rem;
+	display: none;
+}
+
+.declaracion{
+	grid-area: dec;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.declaracion:hover{
+	scale: 1.1;
+	transition-duration: 200ms;
+}
+
+.declaracion:hover .extra{
+	display:  block;
+}
+
+.liquidacion{
+	grid-area: liq;
+	background-color: #DCAC01;
+}
+
+.liquidacion:hover{
+	scale: 1.1;
+	transition-duration: 200ms;
+}
+
+.liquidacion:hover .extra{
+	display:  block;
+}
+
+.empresa{
+	grid-area: emp;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.empresa:hover{
+	scale: 1.1;
+	transition-duration: 200ms;
+}
+
+.empresa:hover .extra{
+	display:  block;
+}
+
+.asesoramiento{
+	grid-area: ase;
+	background-color: #DCAC01;
+	justify-items: stretch;
+}
+
+.asesoramiento:hover{
+	scale: 1.1;
+	transition-duration: 200ms;
+}
+
+.asesoramiento:hover .extra{
+	display:  block;
+}
+
+.imagen{
+	grid-area: foto;
+	background-image: url(../assets/2.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: ease-in-out;
+	animation-duration: 200ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
