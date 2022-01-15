@@ -1,25 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
-/* line 2, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 7, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 body {
   height: 100%;
   background: linear-gradient(to bottom, #212529 0%, #b2b2b2 100%);
 }
 
-/* line 10, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 body h1 {
   font-family: lato;
   font-weight: 300;
   color: black;
 }
 
-/* line 17, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 body div p {
   font-family: lato;
   font-weight: 300;
@@ -35,40 +31,34 @@ body div p {
   }
 }
 
-/* line 35, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex1 {
   animation: entrada;
   animation-delay: 0s;
   animation-duration: 2s;
 }
 
-/* line 41, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex2 {
   animation: entrada;
   animation-delay: 500ms;
   animation-duration: 2s;
 }
 
-/* line 47, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex3 {
   animation: entrada;
   animation-delay: 1s;
   animation-duration: 2s;
 }
 
-/* line 53, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex4 {
   animation: entrada;
   animation-delay: 1500ms;
   animation-duration: 2s;
 }
 
-/* line 59, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex1, #contIndex2, #contIndex3, #contIndex4 {
   background-color: #ffc107;
 }
 
-/* line 63, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex1 span, #contIndex2 span, #contIndex3 span, #contIndex4 span {
   font-family: lato;
   font-weight: 400;
@@ -77,7 +67,6 @@ body div p {
   color: black;
 }
 
-/* line 71, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contIndex1 p, #contIndex2 p, #contIndex3 p, #contIndex4 p {
   font-family: lato;
   font-weight: 300;
@@ -86,22 +75,18 @@ body div p {
 }
 
 @media all and (max-width: 768px) {
-  /* line 80, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
   #contIndex1 span, #contIndex2 span, #contIndex3 span, #contIndex4 span {
     font-size: 1.5rem;
   }
-  /* line 84, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
   #contIndex1 p, #contIndex2 p, #contIndex3 p, #contIndex4 p {
     font-size: 1rem;
   }
-  /* line 88, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
   #contIndex1 img, #contIndex2 img, #contIndex3 img, #contIndex4 img {
     display: none;
   }
 }
 
 /* QUIÉNES SOMOS ----------------------------------- */
-/* line 96, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contadores {
   font-family: Lato;
   font-size: 1.5rem;
@@ -119,19 +104,16 @@ body div p {
   justify-items: stretch;
 }
 
-/* line 115, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .descripción1 {
   grid-area: descripción1;
   background-color: #ccc;
 }
 
-/* line 120, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .descripción2 {
   grid-area: descripción2;
   background-color: #ccc;
 }
 
-/* line 125, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .imagen1 {
   grid-area: imagen1;
   background-image: url(../assets/contador1.jpg);
@@ -140,7 +122,6 @@ body div p {
   height: 200px;
 }
 
-/* line 133, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .imagen2 {
   grid-area: imagen2;
   background-image: url(../assets/contador2.jpg);
@@ -150,7 +131,6 @@ body div p {
 }
 
 /* SERVICIOS ----------------------------------- */
-/* line 143, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 #contenedor {
   font-family: Lato;
   font-size: 1.5rem;
@@ -169,7 +149,6 @@ body div p {
   justify-items: stretch;
 }
 
-/* line 163, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .textbox {
   display: flex;
   flex-direction: row;
@@ -179,14 +158,12 @@ body div p {
   height: 100%;
 }
 
-/* line 172, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .subtitle {
   font-family: Lato;
   font-size: 2rem;
   color: #black;
 }
 
-/* line 176, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .subtitle span {
   font-family: lato;
   font-weight: 400;
@@ -195,7 +172,6 @@ body div p {
   color: black;
 }
 
-/* line 183, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .subtitle p {
   font-family: lato;
   font-weight: 300;
@@ -203,85 +179,71 @@ body div p {
   color: black;
 }
 
-/* line 191, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .extra {
   font-family: lato;
   font-size: 1rem;
   display: none;
 }
 
-/* line 197, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .declaracion {
   grid-area: dec;
   background-color: #DCAC01;
   justify-items: stretch;
 }
 
-/* line 203, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .declaracion:hover {
   scale: 1.1;
   transition-duration: 200ms;
 }
 
-/* line 208, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .declaracion:hover .extra {
   display: block;
 }
 
-/* line 212, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .liquidacion {
   grid-area: liq;
   background-color: #DCAC01;
 }
 
-/* line 217, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .liquidacion:hover {
   scale: 1.1;
   transition-duration: 200ms;
 }
 
-/* line 222, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .liquidacion:hover .extra {
   display: block;
 }
 
-/* line 226, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .empresa {
   grid-area: emp;
   background-color: #DCAC01;
   justify-items: stretch;
 }
 
-/* line 232, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .empresa:hover {
   scale: 1.1;
   transition-duration: 200ms;
 }
 
-/* line 237, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .empresa:hover .extra {
   display: block;
 }
 
-/* line 241, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .asesoramiento {
   grid-area: ase;
   background-color: #DCAC01;
   justify-items: stretch;
 }
 
-/* line 247, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .asesoramiento:hover {
   scale: 1.1;
   transition-duration: 200ms;
 }
 
-/* line 252, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .asesoramiento:hover .extra {
   display: block;
 }
 
-/* line 256, ../../../Desktop/AP - Medina, Mariana (SASS + SEO) - copia/scss/estilos.scss */
 .imagen {
   grid-area: foto;
   background-image: url(../assets/2.jpg);
@@ -290,5 +252,3 @@ body div p {
   animation: ease-in-out;
   animation-duration: 200ms;
 }
-
-/*# sourceMappingURL=estilos.css.map */
