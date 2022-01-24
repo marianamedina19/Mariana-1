@@ -24,33 +24,50 @@ body div p {
   text-align: center;
 }
 
+body div a {
+  text-decoration: none;
+}
+
+body div p {
+  font-family: lato;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+body footer {
+  height: 20px;
+}
+
 /* INDEX ----------------------------------- */
-@keyframes entrada {
+@keyframes entradaizq {
   from {
     transform: translateX(-500px);
   }
 }
 
 #contIndex1 {
-  animation: entrada;
+  animation: entradaizq;
   animation-delay: 0s;
   animation-duration: 2s;
 }
 
 #contIndex2 {
-  animation: entrada;
+  animation: entradaizq;
   animation-delay: 500ms;
   animation-duration: 2s;
 }
 
 #contIndex3 {
-  animation: entrada;
+  animation: entradaizq;
   animation-delay: 1s;
   animation-duration: 2s;
 }
 
 #contIndex4 {
-  animation: entrada;
+  animation: entradaizq;
   animation-delay: 1500ms;
   animation-duration: 2s;
 }
@@ -87,6 +104,12 @@ body div p {
 }
 
 /* QUIÉNES SOMOS ----------------------------------- */
+@keyframes entradader {
+  from {
+    transform: translateX(500px);
+  }
+}
+
 #contadores {
   font-family: Lato;
   font-size: 1.5rem;
@@ -107,11 +130,15 @@ body div p {
 .descripción1 {
   grid-area: descripción1;
   background-color: #ccc;
+  animation: entradader;
+  animation-duration: 2s;
 }
 
 .descripción2 {
   grid-area: descripción2;
   background-color: #ccc;
+  animation: entradaizq;
+  animation-duration: 2s;
 }
 
 .imagen1 {
@@ -120,6 +147,9 @@ body div p {
   background-size: cover;
   background-position: center;
   height: 200px;
+  padding-left: 200px;
+  animation: entradaizq;
+  animation-duration: 2s;
 }
 
 .imagen2 {
@@ -128,6 +158,21 @@ body div p {
   background-size: cover;
   background-position: center;
   height: 200px;
+  padding-right: 200px;
+  animation: entradader;
+  animation-duration: 2s;
+}
+
+@media all and (max-width: 768px) {
+  #contadores {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #contadoresmob {
+    display: none;
+  }
 }
 
 /* SERVICIOS ----------------------------------- */
@@ -149,12 +194,41 @@ body div p {
   justify-items: stretch;
 }
 
+@media all and (max-width: 768px) {
+  #contenedor {
+    display: none;
+  }
+}
+
+#contenedorM {
+  height: 80vh;
+  padding-top: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  #contenedorM {
+    display: none;
+  }
+}
+
+#contenedorM p {
+  font-size: 1rem;
+}
+
+#contenedorM .declaracion, #contenedorM .liquidacion, #contenedorM .empresa, #contenedorM .asesoramiento {
+  height: 5.5rem;
+}
+
+#contenedorM .subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .textbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   height: 100%;
 }
 
@@ -162,6 +236,7 @@ body div p {
   font-family: Lato;
   font-size: 2rem;
   color: #black;
+  justify-content: center;
 }
 
 .subtitle span {
@@ -170,6 +245,7 @@ body div p {
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
+  text-align: center;
 }
 
 .subtitle p {
@@ -177,6 +253,7 @@ body div p {
   font-weight: 300;
   font-size: 1.5rem;
   color: black;
+  text-align: center;
 }
 
 .extra {
@@ -249,6 +326,44 @@ body div p {
   background-image: url(../assets/2.jpg);
   background-size: cover;
   background-position: center;
-  animation: ease-in-out;
-  animation-duration: 200ms;
+  animation: entradader;
+  animation-duration: 2s;
+}
+
+/* EXPERIENCIAS ----------------------------------- */
+#opinion1, #opinion2, #opinion3, #opinion4, #contEx {
+  animation: entradasup;
+  animation-duration: 2s;
+}
+
+@keyframes entradasup {
+  from {
+    transform: translateY(1000px);
+  }
+}
+
+/* CONTACTO ----------------------------------- */
+.ContenedorContacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70vh;
+}
+
+.ContenedorContacto #formulario {
+  padding-left: 1rem;
+  justify-content: flex-start;
+}
+
+.ContenedorContacto #contactlogo {
+  padding-top: 80px;
+  padding-left: 90px;
+  padding-bottom: 80px;
+  padding-right: 80px;
+}
+
+@media all and (max-width: 768px) {
+  #contactlogo {
+    display: none;
+  }
 }
